@@ -10,15 +10,18 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-style: italic;
-  margin-bottom: 10px;
+h1.app-title {
+    font-style: italic;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #749de8;
+    color: #cacaca;
 }
 
 .navigation {
   width: 100%;
   height: 40px;
-  background-color: #eee;
+  background-color: #e4eaf3;
 }
 
 .navigation ul {
@@ -29,6 +32,7 @@ h1 {
 
 .navigation li {
   float: left;
+  list-style: none;
 }
 
 .navigation li a {
@@ -105,6 +109,12 @@ input {
   margin-bottom: 5px;
 }
 
+img.icon {
+    display: inline-block;
+    /* float: left; */
+    width: 55px;
+}
+
 input[type=url] {
   display: inline
 }
@@ -146,3 +156,42 @@ input[type=url]:focus {
   clear: both;
 }
 
+.navigation {
+    background: #c7deff;
+}
+
+input {
+    width: 360px;
+    display: block;
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin: 0 auto;
+}
+
+body {
+    text-align: center;
+}
+
+button.sign-in {
+  margin-top: 10px;
+}
+
+input {
+    margin-top: 20px;
+}
+
+img.icon {
+    display: inline-block;
+    width: 49px;
+    margin-top: -15px;
+}
+
+h1.app-title {
+    font-style: italic;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #749de8;
+    color: #cacaca;
+    display: inline-block;
+}
