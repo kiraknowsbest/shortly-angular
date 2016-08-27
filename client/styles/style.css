@@ -46,10 +46,12 @@ h1.app-title {
 
 .navigation li a:hover {
   background-color: #ddd;
+  height: 100%;
 }
 
 .navigation li a.selected {
   background-color: #ccc;
+  height: 100%;
 }
 
 #container {
@@ -194,4 +196,26 @@ h1.app-title {
     text-shadow: 2px 2px #749de8;
     color: #cacaca;
     display: inline-block;
+}
+
+li.logout {
+    float: left;
+    background: #c5c5c5;
+    height: 100%;
+}
+
+button.shortener {
+    margin: 15px;
+}
+
+.navigation {
+    /* background: #c7deff; */
+    background: #5C258D;
+    background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE);
+    background: linear-gradient(to left, #1A2980 , #26D0CE);
+    color: #fff;
+}
+
+.navigation a {
+    color: #fff;
 }

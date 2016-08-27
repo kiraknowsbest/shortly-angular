@@ -2,7 +2,11 @@
   <div class="navigation">
     <li class="links-ref ref"><a href='#/links'>Links</a></li>
     <li class="shorten-ref ref"><a href='#/shorten'>Shorten</a></li>
+    <!--  <li class="logout"><a href="#/signin">Log Out</li> -->
   </div>
-  <input placeholder="Type your link here" />
-  <button>Shorten Link</button>
+  <input ng-model="thing" placeholder="Type your link here" />
+  <button class="shortener" ng-click="addLink(thing)" >Shorten Link</button>
+  <pre>
+  {{thing}}
+  </pre>
 </div>

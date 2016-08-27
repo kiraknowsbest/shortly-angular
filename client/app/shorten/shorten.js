@@ -2,7 +2,9 @@ angular.module('shortly.shorten', [])
 
 .controller('ShortenController', function ($scope, $location, Links) {
   $scope.link = {};
-  $scope.addLink = Links.addOne;
-
-  return $scope;
+  console.log('this is firing');
+  $scope.addLink = function() {
+    console.log('yo, here is the thing:', $scope.thing);
+    Links.addOne($scope.thing);
+  };
 });
