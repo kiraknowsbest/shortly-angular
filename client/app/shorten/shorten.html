@@ -2,11 +2,12 @@
   <div class="navigation">
     <li class="links-ref ref"><a href='#/links'>Links</a></li>
     <li class="shorten-ref ref"><a href='#/shorten'>Shorten</a></li>
-    <!--  <li class="logout"><a href="#/signin">Log Out</li> -->
+    <li class="logout"><a href='#/signin'>Leave</a></li>
   </div>
-  <input ng-model="newLink" placeholder="Type your link here" />
-  <button class="shortener" ng-click="addLink(newLink)" >Shorten Link</button>
-  <pre>
-  {{thing}}
-  </pre>
+  <form name="shortlyForm" ng-submit="addLink(newLink)" no-validate>
+
+    <input name="newLink" ng-class="{'error': ShortenController.$invalid && ShortenController.$dirty}" ng-model="link.url" placeholder="Type your link here" type="url" required/>
+  
+    <button ng-disabled="ShortenController.$invalid" class="shortener" ng-click="addLink(newLink)" type="submit" >Shorten Link</button>
+  </form>
 </div>

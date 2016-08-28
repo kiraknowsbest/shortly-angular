@@ -14,7 +14,7 @@ h1.app-title {
     font-style: italic;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    text-shadow: 2px 2px #749de8;
+    text-shadow: 3.5px 3.5px #749de8;
     color: #cacaca;
 }
 
@@ -204,8 +204,7 @@ h1.app-title {
     /* margin-top: -16px; */
 }
 li.logout {
-    float: left;
-    background: #c5c5c5;
+    float: right;
     height: 100%;
 }
 
@@ -235,4 +234,27 @@ button.shortener {
 
 .navigation {
     margin-top: -10px;
+}
+
+.link-instance.ng-scope {
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50);
+    background: linear-gradient(to left, #bdc3c7 , #ffffff);
+    border: 1px solid #dde0e2;
+    margin-bottom: -1px;
+}
+
+.link-instance.ng-scope {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.title.ng-binding {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.visits {
+    font-size: 10px;
+    margin-top: 4px;
 }

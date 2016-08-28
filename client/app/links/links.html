@@ -2,12 +2,17 @@
   <div class="navigation">
   <li class="links-ref ref"><a href='#/links'>Lists</a></li>
   <li class="shorten-ref ref"><a href='#/shorten'>Shorten</a></li>
-  <!--   <li class="logout"><a href="#/signin">Log Out</li> -->
+  <li class="logout"><a href='#/signin'>Leave</a></li>
 </div>
   <form name="linkForm">
-    <input ng-model="nonexistent" placeholder="Filter..."/>
+    <input ng-model="criteria" placeholder="Filter..."/>
   </form>
-  <table>
-    <tr></tr>
-  </table>
+  <div class="link-instance" ng-repeat="link in data.links">
+  <div class='visits'><span class='count'>{{link.visits}}</span>Visits</div>
+  <img src='./assets/redirect_icon.png'/>
+    <div class='info'>
+      <div class='title'>{{link.title}}</div>
+      <a href='{{link.baseUrl}}/{{link.code}}'>{{link.baseUrl}}/{{link.code}}</a>
+    </div>
+  </div>
 </div>
